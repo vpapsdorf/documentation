@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daten aufbereiten &#8212; Dokumentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Daten explorieren" href="3_data_exploration.html" />
+    <link rel="prev" title="Herkunft und Beschreibung der Daten" href="1_data_sources.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Dokumentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Dokumentation
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Vorbereitung
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="x_storyboard.html">
+   Big idea worksheet und Storyboard
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Report
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1_data_sources.html">
+   Herkunft und Beschreibung der Daten
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Daten aufbereiten
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3_data_exploration.html">
+   Daten explorieren
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4_data_visualization.html">
+   Daten visualisieren
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Dashboard
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="5_dashboard.html">
+   Dashboard (Präsentation)
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/2_data_tidying.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2_data_tidying.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/2_data_tidying.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliotheken">
+   Bibliotheken
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bevolkerung">
+   Bevölkerung
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zusammenfassung-mit-weiteren-daten">
+   Zusammenfassung mit weiteren Daten
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#neue-daten-aggregieren">
+   Neue Daten aggregieren
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gfk-studie">
+   GfK-Studie
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#daten-speichern">
+   Daten speichern
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="daten-aufbereiten">
+<h1>Daten aufbereiten<a class="headerlink" href="#daten-aufbereiten" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import modules</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">pandas.api.types</span> <span class="kn">import</span> <span class="n">CategoricalDtype</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="bibliotheken">
+<h2>Bibliotheken<a class="headerlink" href="#bibliotheken" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./data/dbs_data.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;ISO-8859-1&#39;</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Die Angaben sind nach einzelnen Bibliotheken aufgeschlüsselt. Nur die Ergebniszeile mit der Summe der Ergebnisse ist relevant.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># just relevant data</span>
+<span class="n">sum_row</span> <span class="o">=</span> <span class="n">library_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">library_df</span><span class="p">[(</span><span class="s1">&#39;NR&#39;</span><span class="p">,</span><span class="s1">&#39;Unnamed: 0_level_1&#39;</span><span class="p">)]</span> <span class="o">==</span> <span class="s1">&#39;Summe&#39;</span><span class="p">)]</span>
+<span class="n">library_df</span> <span class="o">=</span> <span class="n">sum_row</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Das Dataframe soll so aufgebaut sein, dass jede Zeile ein Jahr darstellt. In den Spalten finden sich die Ausprägungen wie zum Beispiel die Anzahl der Bibliotheksnutzer*innen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># shape dataframe</span>
+<span class="n">library_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">library_df</span><span class="p">)</span>
+<span class="n">library_df</span> <span class="o">=</span> <span class="n">library_df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;variable_0&quot;</span><span class="p">:</span> <span class="s2">&quot;variable&quot;</span><span class="p">,</span> <span class="s1">&#39;variable_1&#39;</span><span class="p">:</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="s1">&#39;value&#39;</span><span class="p">})</span>
+<span class="n">library_df</span> <span class="o">=</span> <span class="n">library_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">92</span><span class="p">])</span>
+<span class="n">library_df</span> <span class="o">=</span> <span class="n">library_df</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;variable&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Die Datentypen müssen noch angepasst werden.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># replace decimal comma and thousand delimiter</span>
+<span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">content</span> <span class="ow">in</span> <span class="n">library_df</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+    <span class="n">library_df</span><span class="p">[</span><span class="n">label</span><span class="p">]</span> <span class="o">=</span> <span class="n">library_df</span><span class="p">[</span><span class="n">label</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">library_df</span><span class="p">[</span><span class="n">label</span><span class="p">]</span> <span class="o">=</span> <span class="n">library_df</span><span class="p">[</span><span class="n">label</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># turn into floats</span>
+<span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">content</span> <span class="ow">in</span> <span class="n">library_df</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+    <span class="n">library_df</span><span class="p">[</span><span class="n">label</span><span class="p">]</span> <span class="o">=</span> <span class="n">library_df</span><span class="p">[</span><span class="n">label</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="bevolkerung">
+<h2>Bevölkerung<a class="headerlink" href="#bevolkerung" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pop_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./data/pop_data.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;ISO-8859-1&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Im Datensatz befinden sich einige Zeilen, die keine relevanten Informationen enthalten. Zudem müssen die Beschriftungen und Datentypen angepasst werden.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># just relevant data</span>
+<span class="n">pop_df</span> <span class="o">=</span> <span class="n">pop_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">])</span>
+
+<span class="c1"># rename columns</span>
+<span class="n">pop_df</span> <span class="o">=</span> <span class="n">pop_df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Unnamed: 0&quot;</span><span class="p">:</span> <span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="s2">&quot;Anzahl&quot;</span><span class="p">:</span> <span class="s2">&quot;population&quot;</span><span class="p">})</span>
+
+<span class="c1"># change datatypes</span>
+<span class="n">pop_df</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pop_df</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">pop_df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">pop_df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">)</span>
+<span class="n">pop_df</span> <span class="o">=</span> <span class="n">pop_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="n">pop_df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="zusammenfassung-mit-weiteren-daten">
+<h2>Zusammenfassung mit weiteren Daten<a class="headerlink" href="#zusammenfassung-mit-weiteren-daten" title="Permalink to this headline">¶</a></h2>
+<p>Im Dataframe werden die zwei Dataframes zusammengefasst. Zudem werden einige Daten, die nicht als Datensatz zur Verfügung stehen, händisch eingetragen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="p">{</span>
+        <span class="c1"># general info</span>
+        <span class="s1">&#39;year&#39;</span> <span class="p">:</span> <span class="p">([</span><span class="mi">2010</span><span class="p">,</span> <span class="mi">2011</span><span class="p">,</span> <span class="mi">2012</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="mi">2014</span><span class="p">,</span> <span class="mi">2015</span><span class="p">,</span> <span class="mi">2016</span><span class="p">,</span> <span class="mi">2017</span><span class="p">,</span> <span class="mi">2018</span><span class="p">,</span> <span class="mi">2019</span><span class="p">,</span> <span class="mi">2020</span><span class="p">]),</span>
+        <span class="s1">&#39;population&#39;</span> <span class="p">:</span> <span class="n">pop_df</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">],</span>
+
+        <span class="c1"># reading habits</span>
+        <span class="s1">&#39;digital_readers&#39;</span><span class="p">:</span> <span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">7650000</span><span class="p">,</span> <span class="mi">8520000</span><span class="p">,</span> <span class="mi">8680000</span><span class="p">,</span> <span class="mi">9120000</span><span class="p">]),</span>
+
+        <span class="s1">&#39;readers_weekly&#39;</span> <span class="p">:</span> <span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">11640000</span><span class="p">,</span> <span class="mi">11930000</span><span class="p">,</span> <span class="mi">11960000</span><span class="p">,</span> <span class="mi">12620000</span><span class="p">]),</span>
+        <span class="s1">&#39;readers_monthly&#39;</span> <span class="p">:</span> <span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">15070000</span><span class="p">,</span> <span class="mi">14840000</span><span class="p">,</span> <span class="mi">14730000</span><span class="p">,</span> <span class="mi">14710000</span><span class="p">]),</span>
+        <span class="s1">&#39;readers_once_month&#39;</span> <span class="p">:</span> <span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">6870000</span><span class="p">,</span> <span class="mi">7060000</span><span class="p">,</span> <span class="mi">7110000</span><span class="p">,</span> <span class="mi">7030000</span><span class="p">]),</span>
+
+        <span class="c1"># publishing information</span>
+        <span class="s1">&#39;ebook_sales&#39;</span><span class="p">:</span> <span class="p">([</span><span class="mi">1900000</span><span class="p">,</span> <span class="mi">4300000</span><span class="p">,</span> <span class="mi">13200000</span><span class="p">,</span> <span class="mi">21500000</span><span class="p">,</span> <span class="mi">24800000</span><span class="p">,</span> <span class="mi">27000000</span><span class="p">,</span> <span class="mi">28100000</span><span class="p">,</span> <span class="mi">29100000</span><span class="p">,</span> <span class="mi">32800000</span><span class="p">,</span> <span class="mi">32400000</span><span class="p">,</span> <span class="mi">35800000</span><span class="p">]),</span>
+        <span class="s1">&#39;book_sales&#39;</span><span class="p">:</span> <span class="p">([</span><span class="mi">416000000</span><span class="p">,</span> <span class="mi">401000000</span><span class="p">,</span> <span class="mi">399000000</span><span class="p">,</span> <span class="mi">398000000</span><span class="p">,</span> <span class="mi">387000000</span><span class="p">,</span> <span class="mi">380000000</span><span class="p">,</span> <span class="mi">377000000</span><span class="p">,</span> <span class="mi">367000000</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">]),</span>
+
+        <span class="c1"># library information</span>
+        <span class="s1">&#39;lenders&#39;</span><span class="p">:</span> <span class="n">library_df</span><span class="p">[</span><span class="s1">&#39;Entleiher&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+        <span class="s1">&#39;lendings&#39;</span><span class="p">:</span> <span class="n">library_df</span><span class="p">[</span><span class="s1">&#39;Entleih. insges.&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+        <span class="s1">&#39;digital_lendings&#39;</span><span class="p">:</span> <span class="n">library_df</span><span class="p">[</span><span class="s1">&#39;Entl. virt.Best.&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+        <span class="s1">&#39;ebook_lendings&#39;</span><span class="p">:</span> <span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">25652538</span><span class="p">,</span> <span class="mi">30211532</span><span class="p">]),</span>
+        <span class="s1">&#39;print_lendings&#39;</span><span class="p">:</span> <span class="n">library_df</span><span class="p">[</span><span class="s1">&#39;Entl. Print&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+        
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="neue-daten-aggregieren">
+<h2>Neue Daten aggregieren<a class="headerlink" href="#neue-daten-aggregieren" title="Permalink to this headline">¶</a></h2>
+<p>Zur Datenexploration werden noch weitere Daten aggregiert.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># total lendings and sales of books</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ebook_sales&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;book_sales&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;lendings&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;digital_lendings&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;print_lendings&#39;</span><span class="p">]</span>
+
+<span class="c1"># regular readers</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;readers&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;readers_weekly&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;readers_monthly&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;readers_once_month&#39;</span><span class="p">]</span>
+
+<span class="c1"># readers relative to the population over the years</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_digital_readers&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;digital_readers&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_readers&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;readers&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_lenders&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lenders&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span>
+
+<span class="c1"># lenders relative to the reading population</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_lenders_readers&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lenders&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;readers&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_nonlending_readers&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lenders&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;readers&#39;</span><span class="p">])</span>
+
+<span class="c1"># lendings and sales per population</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;lendings_per_person&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lendings&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales_per_person&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span>
+
+<span class="c1"># change in sales and lendings</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales_change&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;lendings_change&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lendings&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span>
+
+<span class="c1"># lending or sale of ebook per digital reader</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;lendings_per_digital_reader&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ebook_lendings&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;digital_readers&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales_per_digital_reader&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ebook_sales&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;digital_readers&#39;</span><span class="p">]</span>
+
+<span class="c1"># lendings per sale</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;lendings_per_sale&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lendings&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;ebook_lendings_per_sale&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ebook_lendings&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;ebook_sales&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="gfk-studie">
+<h2>GfK-Studie<a class="headerlink" href="#gfk-studie" title="Permalink to this headline">¶</a></h2>
+<p>Da diese Daten nur grafisch dargestellt sind und nicht als Datensatz verfügbar sind, werden sie händisch eingetragen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gfk_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;medium&#39;</span><span class="p">:[</span><span class="s1">&#39;analog&#39;</span><span class="p">,</span> <span class="s1">&#39;digital&#39;</span><span class="p">,</span> <span class="s1">&#39;analog&#39;</span><span class="p">,</span> <span class="s1">&#39;digital&#39;</span><span class="p">,</span> <span class="s1">&#39;analog&#39;</span><span class="p">,</span> <span class="s1">&#39;digital&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;purchases&#39;</span><span class="p">:[</span><span class="mf">27.8</span><span class="p">,</span> <span class="mf">3.7</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">],</span>
+        <span class="s1">&#39;buyer_no&#39;</span><span class="p">:[</span><span class="mf">29.6</span><span class="p">,</span> <span class="mf">29.6</span><span class="p">,</span> <span class="mf">9.2</span><span class="p">,</span> <span class="mf">9.2</span><span class="p">,</span> <span class="mf">2.6</span><span class="p">,</span> <span class="mf">2.6</span><span class="p">],</span>
+        <span class="s1">&#39;buyer&#39;</span><span class="p">:[</span><span class="s1">&#39;Gesamt&#39;</span><span class="p">,</span> <span class="s1">&#39;Gesamt&#39;</span><span class="p">,</span> <span class="s1">&#39;Entleiher*innen analog&#39;</span><span class="p">,</span> <span class="s1">&#39;Entleiher*innen analog&#39;</span><span class="p">,</span> <span class="s1">&#39;Entleiher*innen digital&#39;</span><span class="p">,</span> <span class="s1">&#39;Entleiher*innen digital&#39;</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+
+<span class="n">gfk_df</span><span class="p">[</span><span class="s1">&#39;purchases_per_buyer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">gfk_df</span><span class="p">[</span><span class="s1">&#39;purchases&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">gfk_df</span><span class="p">[</span><span class="s1">&#39;buyer_no&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Diese Daten enthalten kategoriale Werte, die eine Ordnung haben.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cat_habits</span> <span class="o">=</span> <span class="n">CategoricalDtype</span><span class="p">(</span><span class="n">categories</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;nicht mehr&#39;</span><span class="p">,</span> <span class="s1">&#39;seltener&#39;</span><span class="p">,</span> <span class="s1">&#39;genau so oft&#39;</span><span class="p">,</span> <span class="s1">&#39;öfter&#39;</span><span class="p">,</span> <span class="s1">&#39;noch nie&#39;</span><span class="p">],</span> <span class="n">ordered</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">buying_habits_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;medium&#39;</span><span class="p">:[</span><span class="s1">&#39;analog&#39;</span><span class="p">,</span> <span class="s1">&#39;analog&#39;</span><span class="p">,</span> <span class="s1">&#39;analog&#39;</span><span class="p">,</span> <span class="s1">&#39;analog&#39;</span><span class="p">,</span> <span class="s1">&#39;analog&#39;</span><span class="p">,</span> <span class="s1">&#39;digital&#39;</span><span class="p">,</span> <span class="s1">&#39;digital&#39;</span><span class="p">,</span> <span class="s1">&#39;digital&#39;</span><span class="p">,</span> <span class="s1">&#39;digital&#39;</span><span class="p">,</span> <span class="s1">&#39;digital&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;buying_habits&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;nicht mehr&#39;</span><span class="p">,</span> <span class="s1">&#39;seltener&#39;</span><span class="p">,</span> <span class="s1">&#39;genau so oft&#39;</span><span class="p">,</span> <span class="s1">&#39;öfter&#39;</span><span class="p">,</span> <span class="s1">&#39;noch nie&#39;</span><span class="p">,</span> <span class="s1">&#39;nicht mehr&#39;</span><span class="p">,</span> <span class="s1">&#39;seltener&#39;</span><span class="p">,</span> <span class="s1">&#39;genau so oft&#39;</span><span class="p">,</span> <span class="s1">&#39;öfter&#39;</span><span class="p">,</span> <span class="s1">&#39;noch nie&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;percentage&#39;</span><span class="p">:[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">38</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+
+<span class="n">buying_habits_df</span><span class="p">[</span><span class="s1">&#39;buying_habits&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">buying_habits_df</span><span class="p">[</span><span class="s1">&#39;buying_habits&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">cat_habits</span><span class="p">)</span>
+<span class="n">buying_habits_df</span><span class="p">[</span><span class="s1">&#39;medium&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Categorical</span><span class="p">(</span><span class="n">buying_habits_df</span><span class="p">[</span><span class="s1">&#39;medium&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="daten-speichern">
+<h2>Daten speichern<a class="headerlink" href="#daten-speichern" title="Permalink to this headline">¶</a></h2>
+<p>Die Dataframes als csv-Dateien speichern.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./data/ebooks_data.csv&#39;</span><span class="p">)</span>
+<span class="c1">#df.to_csv(&#39;./app/data/ebooks_data.csv&#39;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gfk_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./data/gfk_data.csv&#39;</span><span class="p">)</span>
+<span class="c1">#gfk_df.to_csv(&#39;./app/data/gfk_data.csv&#39;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">buying_habits_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./data/purchase_data.csv&#39;</span><span class="p">)</span>
+<span class="c1">#buying_habits_df.to_csv(&#39;./app/data/purchase_data.csv&#39;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="1_data_sources.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Herkunft und Beschreibung der Daten</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="3_data_exploration.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Daten explorieren</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Verena Papsdorf<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

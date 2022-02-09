@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard (Präsentation) &#8212; Dokumentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Daten visualisieren" href="4_data_visualization.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Dokumentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Dokumentation
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Vorbereitung
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="x_storyboard.html">
+   Big idea worksheet und Storyboard
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Report
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1_data_sources.html">
+   Herkunft und Beschreibung der Daten
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2_data_tidying.html">
+   Daten aufbereiten
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3_data_exploration.html">
+   Daten explorieren
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4_data_visualization.html">
+   Daten visualisieren
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Dashboard
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Dashboard (Präsentation)
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/5_dashboard.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F5_dashboard.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/5_dashboard.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#desgin">
+   Desgin
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#erstellen-des-dashboards">
+   Erstellen des Dashboards
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interaktivitat-und-einbinden-in-die-story">
+   Interaktivität und Einbinden in die Story
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ergebnis">
+   Ergebnis
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="dashboard-prasentation">
+<h1>Dashboard (Präsentation)<a class="headerlink" href="#dashboard-prasentation" title="Permalink to this headline">¶</a></h1>
+<p>Die Präsentation wurde mit PowerPoint erstellt. Das Dashboard enthält alle Grafiken im Abschnitt “Analyse” der Präsentation. So muss nicht ständig zwischen PowerPoint und dem Dashboard gewechselt. Zudem ist es besonders geschickt, weil man auch mit den Grafiken interagieren kann.</p>
+<div class="section" id="desgin">
+<h2>Desgin<a class="headerlink" href="#desgin" title="Permalink to this headline">¶</a></h2>
+<p>In der Präsentation/im Dashboard wurden das gleiche Design wie bei der Erstellung der Grafiken verwendet. Für den Teil der Präsentation, welcher nicht so stark auf Daten beruht, wurde möglichst wenig Text verwendet und viel auf Icons zurückgegriffen. Ist eine Grafik auf einer Folie zu sehen, wurde zur Einordnung ein Satz eingeblendet, der die Kerninformation transportiert.</p>
+</div>
+<div class="section" id="erstellen-des-dashboards">
+<h2>Erstellen des Dashboards<a class="headerlink" href="#erstellen-des-dashboards" title="Permalink to this headline">¶</a></h2>
+<p>Das Dashboard basiert auf einer App aus den Vorlesungsmaterialien. Die Grafiken waren bereits erstellt und wurden nur noch angepasst, damit sie zum Dashboard passen. dIe Tab-Bestandteile wurden vom Beispiel der <a class="reference external" href="https://dash.plotly.com/dash-core-components/tabs">Plotly-Website</a> (Abschnitt Method 2. Content as Tab Children) entnommen und an die bereits bestehende App angepasst. Wie in der PowerPoint-Präsentation wurde zu jeder Grafik wurde ein Satz verfasst, welcher die Kerninformationen zusammenfasst.</p>
+</div>
+<div class="section" id="interaktivitat-und-einbinden-in-die-story">
+<h2>Interaktivität und Einbinden in die Story<a class="headerlink" href="#interaktivitat-und-einbinden-in-die-story" title="Permalink to this headline">¶</a></h2>
+<p>Das Dashboard hat einen statischen Header und Hintergrund. Die Inhalte sind in drei Tabs unterteilt, damit man zwischen diesen möglichst leicht springen kann.</p>
+<ul class="simple">
+<li><p>Im ersten Tab wird vor allem das Anklicken der Legendenbezeichnungen genutzt</p></li>
+<li><p>Im zweiten Tab wird mit der Grafik interagiert, indem man wichtige Stellen fokussiert und heranzoomt</p></li>
+<li><p>Im letzten Tab wird nicht nur die Interaktivität der Plotly-Grafiken genutzt, sondern auch die der Dash-App. So verändert sich die Grafik je nach Auswahl im Dropdown-Menü</p></li>
+</ul>
+</div>
+<div class="section" id="ergebnis">
+<h2>Ergebnis<a class="headerlink" href="#ergebnis" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">import</span> <span class="nn">dash</span>
+<span class="kn">import</span> <span class="nn">dash_core_components</span> <span class="k">as</span> <span class="nn">dcc</span>
+<span class="kn">import</span> <span class="nn">dash_html_components</span> <span class="k">as</span> <span class="nn">html</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">plotly</span> <span class="kn">import</span> <span class="n">graph_objs</span> <span class="k">as</span> <span class="n">go</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="c1">#import plotly.graph_objects as go</span>
+<span class="c1">#import plotly.express as px</span>
+<span class="kn">from</span> <span class="nn">dash.dependencies</span> <span class="kn">import</span> <span class="n">Input</span><span class="p">,</span> <span class="n">Output</span>
+
+<span class="sd">&quot;&quot;&quot; Preparations &quot;&quot;&quot;</span>
+
+<span class="c1"># colors</span>
+<span class="n">light_grey</span> <span class="o">=</span> <span class="s2">&quot;#eeeeee&quot;</span>
+<span class="n">grey</span> <span class="o">=</span> <span class="s2">&quot;#b3b3b3&quot;</span>
+<span class="n">dark_grey</span> <span class="o">=</span> <span class="s2">&quot;#666666&quot;</span>
+<span class="n">white</span> <span class="o">=</span> <span class="s2">&quot;#ffffff&quot;</span>
+<span class="n">red</span> <span class="o">=</span> <span class="s2">&quot;#810a26&quot;</span>
+<span class="n">dark_red</span> <span class="o">=</span> <span class="s2">&quot;#4c0a18&quot;</span>
+<span class="n">light_red</span> <span class="o">=</span> <span class="s1">&#39;#b00e34&#39;</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./data/ebooks_data.csv&quot;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">gfk_df_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./data/gfk_data.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+
+<span class="sd">&quot;&quot;&quot; Figure changes in sales and lendings &quot;&quot;&quot;</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+    <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;year.1&quot;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;lendings_change&quot;</span><span class="p">],</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Entleihungen&quot;</span><span class="p">,</span>
+        <span class="n">marker_color</span><span class="o">=</span><span class="n">dark_red</span><span class="p">,</span>
+        <span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+    <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;year.1&quot;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;sales_change&quot;</span><span class="p">],</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Verkäufe&quot;</span><span class="p">,</span>
+        <span class="n">marker_color</span><span class="o">=</span><span class="n">red</span><span class="p">,</span>
+        <span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Veränderungen der Verkäufe und Entleihungen zum Vorjahr&quot;</span><span class="p">,</span>
+    <span class="n">title_font_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
+    <span class="n">xaxis_title</span><span class="o">=</span><span class="s2">&quot;Jahr&quot;</span><span class="p">,</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">&quot;Anzahl an Büchern&quot;</span><span class="p">,</span>
+    <span class="n">font_family</span><span class="o">=</span><span class="s2">&quot;Gravitas One&quot;</span><span class="p">,</span>
+    <span class="n">font_color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span>
+    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_shape</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;line&#39;</span><span class="p">,</span> <span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="mi">2100</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">),</span> <span class="n">xref</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">yref</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span>
+    <span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;Jahr&quot;</span><span class="p">,</span>
+    <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mf">2010.5</span><span class="p">,</span> <span class="mf">2017.5</span><span class="p">],</span>
+    <span class="n">ticks</span><span class="o">=</span><span class="s2">&quot;inside&quot;</span><span class="p">,</span>
+    <span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span>
+    <span class="n">tickwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span>
+    <span class="n">dtick</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span>
+    <span class="n">tick0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">ticks</span><span class="o">=</span><span class="s2">&quot;inside&quot;</span><span class="p">,</span>
+    <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">14000000</span><span class="p">,</span> <span class="mi">8000000</span><span class="p">],</span>
+    <span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span>
+    <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<span class="sd">&quot;&quot;&quot;&quot; Figure sales and lendings over time&quot;&quot;&quot;</span>
+
+<span class="n">fig_sales</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+
+<span class="c1"># analog</span>
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;book_sales&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Verkäufe analog&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">light_red</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+text&#39;</span><span class="p">))</span>
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;print_lendings&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Entleihungen analog&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">dark_red</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+text&#39;</span><span class="p">))</span>
+
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">2010.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">330000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;analog&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">),</span> <span class="n">bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">bordercolor</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span> <span class="n">borderpad</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2017</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">350000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Verkäufe&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">light_red</span><span class="p">))</span>
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2017</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">230000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Entleihungen&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_red</span><span class="p">))</span>
+
+<span class="c1">#digital</span>
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;ebook_sales&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Verkäufe digital&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">light_red</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+text&#39;</span><span class="p">))</span>
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;digital_lendings&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Entleihungen digital&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">dark_red</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+text&#39;</span><span class="p">))</span>
+
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">2010.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">50000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;digital&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">),</span> <span class="n">bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">bordercolor</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span> <span class="n">borderpad</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2017</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">50000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Verkäufe&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">light_red</span><span class="p">))</span>
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2017</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">8000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Entleihungen&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_red</span><span class="p">))</span>
+
+<span class="c1"># layout</span>
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Verkaufs- und Entleihzahlen&#39;</span><span class="p">,</span>
+                    <span class="n">title_font_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> 
+                    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span>
+                    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Anzahl Bücher&#39;</span><span class="p">,</span>
+                    <span class="n">font_family</span><span class="o">=</span><span class="s1">&#39;Gravitas One&#39;</span><span class="p">,</span>
+                    <span class="n">font_color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span>
+                    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
+                    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                   <span class="p">)</span>
+
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span> <span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">tickwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig_sales</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">tick0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">420000000</span><span class="p">])</span>
+
+
+<span class="sd">&quot;&quot;&quot; App &quot;&quot;&quot;</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">dash</span><span class="o">.</span><span class="n">Dash</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Analyse | Bundesrat&quot;</span><span class="p">)</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">layout</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span>
+            <span class="n">className</span><span class="o">=</span><span class="s2">&quot;app-header&quot;</span><span class="p">,</span>
+            <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span><span class="s2">&quot;Die gesetzliche Gleichstellung von digitalen und analogen Büchern&quot;</span><span class="p">,</span> <span class="n">className</span><span class="o">=</span><span class="s2">&quot;app-header--title&quot;</span><span class="p">),</span>
+                <span class="n">html</span><span class="o">.</span><span class="n">Img</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s2">&quot;./assets/bundesrat.png&quot;</span><span class="p">,</span> <span class="n">className</span><span class="o">=</span><span class="s2">&quot;app-header&quot;</span><span class="p">),</span>
+            <span class="p">],</span>
+        <span class="p">),</span>
+        <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">([</span>
+            <span class="n">dcc</span><span class="o">.</span><span class="n">Tabs</span><span class="p">([</span>
+                <span class="n">dcc</span><span class="o">.</span><span class="n">Tab</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Welcher Zusammenhang besteht zwischen Entleihungen und Verkäufen?&#39;</span><span class="p">,</span> <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">H3</span><span class="p">(</span><span class="s1">&#39;Es scheint generell keinen erkennbaren Zusammenhang zwischen Entleihungen und Verkäufen zu geben.&#39;</span><span class="p">),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span>
+                                <span class="p">[</span>
+                                    <span class="n">dcc</span><span class="o">.</span><span class="n">Graph</span><span class="p">(</span><span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">),</span>
+                                <span class="p">],</span>
+                                <span class="n">className</span><span class="o">=</span><span class="s2">&quot;graph&quot;</span><span class="p">,</span>
+                            <span class="p">),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">Hr</span><span class="p">(),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="s1">&#39;Abbildung 3: Veränderungen der Verkäufe und Entleihungen zum Vorjahr.&#39;</span><span class="p">),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="s1">&#39;Basierend auf Daten von Börsenverein des Deutschen Buchhandels (2021), Börsenblatt &amp; Börsenverein des Deutschen Buchhandels (2018) und Deutsche Bibliotheksstatistik (2010–2020).&#39;</span><span class="p">),</span>
+                <span class="p">],</span>
+                <span class="n">className</span> <span class="o">=</span><span class="s1">&#39;custom-tab&#39;</span><span class="p">,</span>
+                <span class="n">selected_className</span><span class="o">=</span><span class="s1">&#39;custom-tab--selected&#39;</span>
+                <span class="p">),</span>
+                <span class="n">dcc</span><span class="o">.</span><span class="n">Tab</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Inwiefern unterscheiden sich Entleihungen und Verkäufe im Hinblick auf digitale und analoge Bücher?&#39;</span><span class="p">,</span> <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">H3</span><span class="p">(</span><span class="s1">&#39;Im Verhältnis zu analogen Büchern und zu digitalen Entleihungen werden E-Books eher selten gekauft.&#39;</span><span class="p">),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span>
+                                <span class="p">[</span>
+                                    <span class="n">dcc</span><span class="o">.</span><span class="n">Graph</span><span class="p">(</span><span class="n">figure</span><span class="o">=</span><span class="n">fig_sales</span><span class="p">),</span>
+                                <span class="p">],</span>
+                                <span class="n">className</span><span class="o">=</span><span class="s2">&quot;graph&quot;</span><span class="p">,</span>
+                            <span class="p">),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">Hr</span><span class="p">(),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="s1">&#39;Abbildung 4: Veränderungen der Verkäufe und Entleihungen.&#39;</span><span class="p">),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="s1">&#39;Basierend auf Daten von Börsenverein des Deutschen Buchhandels (2021), Börsenblatt &amp; Börsenverein des Deutschen Buchhandels (2018) und Deutsche Bibliotheksstatistik (2010–2020).&#39;</span><span class="p">),</span>
+                <span class="p">],</span>
+                <span class="n">className</span> <span class="o">=</span><span class="s1">&#39;custom-tab&#39;</span><span class="p">,</span>
+                <span class="n">selected_className</span><span class="o">=</span><span class="s1">&#39;custom-tab--selected&#39;</span>
+                <span class="p">),</span>
+
+                <span class="n">dcc</span><span class="o">.</span><span class="n">Tab</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Wer kauft digitale Bücher?&#39;</span><span class="p">,</span> <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">H3</span><span class="p">(</span><span class="s1">&#39;Das Entleihen von digitalen Bücher scheint den Kauf von digitalen Büchern nicht zu hemmen.&#39;</span><span class="p">),</span>
+                    <span class="n">dcc</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+                        <span class="n">className</span><span class="o">=</span><span class="s2">&quot;input&quot;</span><span class="p">,</span>
+                        <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;comparison&quot;</span><span class="p">,</span>
+                        <span class="n">options</span><span class="o">=</span><span class="p">[</span>
+                            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Kaufverhalten insgesamt&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span>
+                            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Kaufverhalten aufgeschlüsselt&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+                        <span class="p">],</span>
+                        <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                    <span class="p">),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span>
+                                <span class="p">[</span>
+                                    <span class="n">dcc</span><span class="o">.</span><span class="n">Graph</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;graph1&quot;</span><span class="p">),</span>
+                                <span class="p">],</span>
+                                <span class="n">className</span><span class="o">=</span><span class="s2">&quot;graph&quot;</span><span class="p">,</span>
+                            <span class="p">),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">Hr</span><span class="p">(),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="s1">&#39;Abbildung 5: Kaufverhalten aufgeschlüsselt nach verschiedenen Faktoren.&#39;</span><span class="p">),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="s1">&#39;Basierend auf Daten von GfK (2019, S. 35)&#39;</span><span class="p">),</span>
+                <span class="p">],</span>
+                <span class="n">className</span> <span class="o">=</span><span class="s1">&#39;custom-tab&#39;</span><span class="p">,</span>
+                <span class="n">selected_className</span><span class="o">=</span><span class="s1">&#39;custom-tab--selected&#39;</span>
+                <span class="p">),</span>
+            <span class="p">])</span>
+        <span class="p">],</span>
+        <span class="n">className</span><span class="o">=</span><span class="s1">&#39;app-main&#39;</span><span class="p">),</span>
+    <span class="p">],</span>
+<span class="p">)</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span>
+    <span class="n">Output</span><span class="p">(</span><span class="s2">&quot;hover-data&quot;</span><span class="p">,</span> <span class="s2">&quot;children&quot;</span><span class="p">),</span> <span class="n">Input</span><span class="p">(</span><span class="s2">&quot;basic-interactions&quot;</span><span class="p">,</span> <span class="s2">&quot;hoverData&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="k">def</span> <span class="nf">display_hover_data</span><span class="p">(</span><span class="n">hoverData</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">hoverData</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span>
+    <span class="n">Output</span><span class="p">(</span><span class="s2">&quot;click-data&quot;</span><span class="p">,</span> <span class="s2">&quot;children&quot;</span><span class="p">),</span> <span class="n">Input</span><span class="p">(</span><span class="s2">&quot;basic-interactions&quot;</span><span class="p">,</span> <span class="s2">&quot;clickData&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="k">def</span> <span class="nf">display_click_data</span><span class="p">(</span><span class="n">clickData</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">clickData</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span>
+    <span class="n">Output</span><span class="p">(</span><span class="s2">&quot;selected-data&quot;</span><span class="p">,</span> <span class="s2">&quot;children&quot;</span><span class="p">),</span> <span class="n">Input</span><span class="p">(</span><span class="s2">&quot;basic-interactions&quot;</span><span class="p">,</span> <span class="s2">&quot;selectedData&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="k">def</span> <span class="nf">display_selected_data</span><span class="p">(</span><span class="n">selectedData</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">selectedData</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span>
+    <span class="n">Output</span><span class="p">(</span><span class="s2">&quot;relayout-data&quot;</span><span class="p">,</span> <span class="s2">&quot;children&quot;</span><span class="p">),</span> <span class="n">Input</span><span class="p">(</span><span class="s2">&quot;basic-interactions&quot;</span><span class="p">,</span> <span class="s2">&quot;relayoutData&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="k">def</span> <span class="nf">display_relayout_data</span><span class="p">(</span><span class="n">relayoutData</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">relayoutData</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span>
+    <span class="n">Output</span><span class="p">(</span><span class="s2">&quot;graph1&quot;</span><span class="p">,</span> <span class="s2">&quot;figure&quot;</span><span class="p">),</span>
+    <span class="n">Input</span><span class="p">(</span><span class="s2">&quot;comparison&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">),</span>
+<span class="p">)</span>
+<span class="k">def</span> <span class="nf">update_figure</span><span class="p">(</span><span class="n">comparison</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="n">comparison</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+
+        <span class="n">overview_df</span> <span class="o">=</span> <span class="n">gfk_df_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;buyer&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;buyer&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="n">fig1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">overview_df</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;purchases_per_buyer&quot;</span><span class="p">)</span>
+        <span class="n">fig1</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">marker_color</span><span class="o">=</span><span class="p">[</span><span class="n">red</span><span class="p">,</span> <span class="n">red</span><span class="p">,</span> <span class="n">red</span><span class="p">])</span>
+
+    <span class="k">else</span><span class="p">:</span>
+
+        <span class="n">general_df</span> <span class="o">=</span> <span class="n">gfk_df_data</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;buyer&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="n">fig1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">general_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;buyer&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;purchases_per_buyer&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;medium&#39;</span><span class="p">,</span> <span class="n">barmode</span><span class="o">=</span><span class="s1">&#39;group&#39;</span><span class="p">,</span>
+                        <span class="n">color_discrete_map</span><span class="o">=</span><span class="p">{</span>
+                            <span class="s1">&#39;analog&#39;</span><span class="p">:</span> <span class="n">light_red</span><span class="p">,</span>
+                            <span class="s1">&#39;digital&#39;</span><span class="p">:</span> <span class="n">dark_red</span><span class="p">,</span>
+                        <span class="p">})</span>
+
+    <span class="n">fig1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Kaufverhalten&#39;</span><span class="p">,</span>
+                        <span class="n">title_font_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
+                        <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Art der Käufer*innen&#39;</span><span class="p">,</span>
+                        <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Durchschnittl. Anzahl an Büchern&#39;</span><span class="p">,</span>
+                        <span class="n">font_family</span><span class="o">=</span><span class="s1">&#39;Gravitas One&#39;</span><span class="p">,</span>
+                        <span class="n">font_color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span>
+                        <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
+                        <span class="n">legend_title_text</span><span class="o">=</span><span class="s1">&#39;Art des Buchs&#39;</span>
+                    <span class="p">)</span>
+
+    <span class="n">fig1</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">fig1</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">tick0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">fig1</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="ne">C</span>:\Users\VERENA~1\AppData\Local\Temp/ipykernel_11524/3980344789.py in &lt;module&gt;
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span> <span class="nn">plotly</span> <span class="kn">import</span> <span class="n">graph_objs</span> <span class="k">as</span> <span class="n">go</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="c1">#import plotly.graph_objects as go</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="c1">#import plotly.express as px</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;plotly.express&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="4_data_visualization.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Daten visualisieren</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Verena Papsdorf<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
