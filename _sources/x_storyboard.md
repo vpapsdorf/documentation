@@ -1,8 +1,7 @@
 # Big idea worksheet und Storyboard
 ## Big idea worksheet
 
-**Projekt**
-Gleichstellung von analogen und digitalen Büchern
+**Projekt**: Gleichstellung von analogen und digitalen Büchern
 
 **Wer ist das Publikum?**
 - Die Abgeordneten des Bundesrats (insbesondere Winfried Kretschmann)
