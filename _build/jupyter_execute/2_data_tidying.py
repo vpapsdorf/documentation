@@ -201,20 +201,20 @@ buying_habits_df['medium'] = pd.Categorical(buying_habits_df['medium'])
 # In[12]:
 
 
-df.to_csv('./data/ebooks_data.csv')
-df.to_csv('./app/data/ebooks_data.csv')
+#df.to_csv('./data/ebooks_data.csv')
+#df.to_csv('./app/data/ebooks_data.csv')
 
 
-# In[ ]:
+# In[13]:
 
 
-gfk_df.to_csv('./data/gfk_data.csv')
-gfk_df.to_csv('./app/data/gfk_data.csv')
+#gfk_df.to_csv('./data/gfk_data.csv')
+#gfk_df.to_csv('./app/data/gfk_data.csv')
 
 
-# In[ ]:
+# In[14]:
 
 
-buying_habits_df.to_csv('./data/purchase_data.csv')
-buying_habits_df.to_csv('./app/data/purchase_data.csv')
+#buying_habits_df.to_csv('./data/purchase_data.csv')
+#buying_habits_df.to_csv('./app/data/purchase_data.csv')
 
