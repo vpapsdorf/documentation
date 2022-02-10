@@ -38,10 +38,10 @@ dark_blue = '#10475b'
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
-#import plotly.express as px
+import plotly.express as px
 
 
-# In[34]:
+# In[3]:
 
 
 df = pd.read_csv('./data/ebooks_data.csv', delimiter=',', header=[0])
@@ -53,7 +53,7 @@ gfk_df_data = pd.read_csv('./data/gfk_data.csv', delimiter=',', header=[0])
 # ### Wie viele aktive Bibliotheksnutzer*innen gibt es in Deutschland?
 # Diese Grafik wurde in der Präsentation nicht verwendet.
 
-# In[35]:
+# In[4]:
 
 
 fig = go.Figure()
@@ -92,7 +92,7 @@ fig.show()
 # ### Wie groß ist der Anteil der aktiven Leser*innen - gesamt und digital?
 # Diese Grafik wurde in der Präsentation verwendet.
 
-# In[36]:
+# In[5]:
 
 
 fig = go.Figure()
@@ -149,7 +149,7 @@ fig.show()
 # ### Wie hoch ist der Anteil an aktiven Bibliotheksnutzer*innen an aktiven Leser\*innen?
 # Diese Grafik wurde in der Präsentation verwendet.
 
-# In[37]:
+# In[6]:
 
 
 fig = go.Figure()
@@ -199,7 +199,7 @@ fig.show()
 # ### Wie viele Bücher werden ausgeliehen/gekauft (aufgeschlüsselt)?
 # Diese Grafik wurde in der Präsentation (Dashboard) verwendet.
 
-# In[38]:
+# In[7]:
 
 
 fig = go.Figure()
@@ -246,7 +246,7 @@ fig.show()
 # ### Wie viele Bücher werden pro gekauftes Buch entliehen - analog und digital?
 # Diese Grafik wurde in der Präsentation nicht verwendet.
 
-# In[39]:
+# In[8]:
 
 
 fig = go.Figure()
@@ -273,7 +273,7 @@ fig.update_yaxes(tick0=0, ticks='inside', range=[0,1], fixedrange=True, tickcolo
 # ### Wie verändern sich die Ausleih- und Verkaufszahlen in den letzten Jahren?
 # Diese Grafik wurde in der Präsentation (Dashboard) verwendet.
 
-# In[40]:
+# In[9]:
 
 
 fig = go.Figure()
@@ -301,7 +301,7 @@ fig.show()
 # ### Wie ist das Kaufverhalten der aktiven Buchkäufer*innen (aufgeschlüsselt)?
 # Diese Grafik wurde in der Präsentation (Dashboard) verwendet.
 
-# In[41]:
+# In[10]:
 
 
 fig1 = px.bar(gfk_df_data, x="buyer", y="purchases_per_buyer", color='medium', barmode='group',
@@ -330,7 +330,7 @@ fig1.update_yaxes(tick0=0, ticks='inside', range=[0,1], tickcolor=grey, linecolo
 # ### Wie ist das Kaufverhalten von Bibliotheksnutzer*innen (Übersicht)?
 # Diese Grafik wurde in der Präsentation (Dashboard) verwendet.
 
-# In[43]:
+# In[11]:
 
 
 my_df = gfk_df_data.groupby(['buyer']).mean()

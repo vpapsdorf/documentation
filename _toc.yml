@@ -7,7 +7,7 @@ root: intro
 parts:
 - caption: Vorbereitung
   chapters:
-  - file: x_storyboard
+  - file: 0_storyboard
 - caption: Report
   chapters:
   - file: 1_data_sources
@@ -17,3 +17,4 @@ parts:
 - caption: Dashboard
   chapters:
   - file: 5_dashboard
+  - file: 6_excel

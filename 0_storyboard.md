@@ -1,20 +1,15 @@
 # Big idea worksheet und Storyboard
 ## Big idea worksheet
-
-**Projekt**: Gleichstellung von analogen und digitalen Büchern
-
+### Projekt: Gleichstellung von analogen und digitalen Büchern
 **Wer ist das Publikum?**
 - Die Abgeordneten des Bundesrats (insbesondere Winfried Kretschmann)
 - Die Abgeordneten sorgen sich um das Wohl der Bürger\*innen, die Stimmen der Wähler*innen
 - Sie sollen die Gleichstellung von analogen und digitalen Büchern weiter verfolgen
-
 **Was steht auf dem Spiel?**
 - Wenn sie sich dafür entscheiden, ist das für die öffentlichen Bibliotheken und die Wähler*innen etwas positives. Zudem ist ein Schritt in die Modernisierung.
 - Wenn sie sich dagegen entscheiden, können öffentliche Bibliotheken ihren gesellschaftlichen Auftrag in Hinsicht auf Informationsfreiheit und Chancengleichheit nicht optimal erfüllen. Zudem könnten sie Wählerstimmen verlieren.
-
 **The big idea**
 Der Bundesrat sollte die Gleichstellung von analogen und digitalen Büchern weiter verfolgen, weil dies ein wichtiger Schritt in Richtung Modernisierung ist und die wichtige Rolle öffentlicher Bibliotheken in der Gesellschaft anerkennt.
-
 ## Storyboarding
 1. Hintergrund
     - Wie sieht die bisherige (Rechts-)Lage aus? Der Verlieh von gedruckten Büchern ist rechtlich geregelt
