@@ -11,6 +11,7 @@
 - Wenn sie sich dagegen entscheiden, können öffentliche Bibliotheken ihren gesellschaftlichen Auftrag in Hinsicht auf Informationsfreiheit und Chancengleichheit nicht optimal erfüllen. Zudem könnten sie Wählerstimmen verlieren.
 
 **The big idea**
+
 Der Bundesrat sollte die Gleichstellung von analogen und digitalen Büchern weiter verfolgen, weil dies ein wichtiger Schritt in Richtung Modernisierung ist und die wichtige Rolle öffentlicher Bibliotheken in der Gesellschaft anerkennt.
 ## Storyboarding
 1. Hintergrund
