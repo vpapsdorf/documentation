@@ -21,7 +21,7 @@
 # In[1]:
 
 
-import json
+""" import json
 
 import dash
 import dash_core_components as dcc
@@ -29,11 +29,8 @@ import dash_html_components as html
 import pandas as pd
 from plotly import graph_objs as go
 import plotly.express as px
-#import plotly.graph_objects as go
-#import plotly.express as px
 from dash.dependencies import Input, Output
 
-""" Preparations """
 
 # colors
 light_grey = "#eeeeee"
@@ -48,7 +45,6 @@ df = pd.read_csv("./data/ebooks_data.csv", delimiter=",", header=[0])
 gfk_df_data = pd.read_csv('./data/gfk_data.csv', delimiter=',', header=[0])
 
 
-""" Figure changes in sales and lendings """
 
 fig = go.Figure()
 
@@ -101,7 +97,6 @@ fig.update_yaxes(
 )
 
 
-"""" Figure sales and lendings over time"""
 
 fig_sales = go.Figure()
 
@@ -136,7 +131,6 @@ fig_sales.update_xaxes(title_text='Jahr', ticks='inside', fixedrange=True, tickc
 fig_sales.update_yaxes(tick0=0, ticks='inside', tickcolor=grey, linecolor=grey, range=[0,420000000])
 
 
-""" App """
 app = dash.Dash(__name__, title="Analyse | Bundesrat")
 
 app.layout = html.Div(
@@ -281,4 +275,7 @@ def update_figure(comparison):
 
 if __name__ == "__main__":
     app.run_server(debug=True)
+"""
+
+print('_')
 

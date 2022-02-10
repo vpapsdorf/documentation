@@ -1,7 +1,7 @@
 # Herkunft und Beschreibung der Daten
 Für die Auswertung habe ich - wenn möglich - den Zeitraum von **2010 bis 2020** gewählt. Zur Exploration wurde 
 ## 1. [Bibliotheksstatistik](https://www.bibliotheksstatistik.de)
-Daten über aktive Nutzer*innen und Ausleihen (Deutsche Bibliotheksstatistik, 2010–2020).
+Daten über aktive Nutzer*innen und Ausleihen (Statistisches Bundesamt, 2010–2020).
 
 Folgende Variablen habe ich ausgewählt:
 - Ausgaben Erwerbungen

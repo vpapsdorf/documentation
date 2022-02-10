@@ -100,7 +100,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="x_storyboard.html">
+  <a class="reference internal" href="0_storyboard.html">
    Big idea worksheet und Storyboard
   </a>
  </li>
@@ -141,6 +141,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="5_dashboard.html">
    Dashboard (Präsentation)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6_excel.html">
+   Excel
   </a>
  </li>
 </ul>
@@ -258,38 +263,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#wie-grosz-ist-der-anteil-der-aktiven-leser-innen-gesamt-und-digital">
-     Wie groß ist der Anteil der aktiven Leser*innen - gesamt und digital?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#wie-hoch-ist-der-anteil-an-aktiven-bibliotheksnutzer-innen-an-aktiven-leser-innen">
-     Wie hoch ist der Anteil an aktiven Bibliotheksnutzer*innen an aktiven Leser*innen?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#wie-viele-bucher-werden-ausgeliehen-gekauft-aufgeschlusselt">
-     Wie viele Bücher werden ausgeliehen/gekauft (aufgeschlüsselt)?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#wie-viele-bucher-werden-pro-gekauftes-buch-entliehen-analog-und-digital">
      Wie viele Bücher werden pro gekauftes Buch entliehen - analog und digital?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#wie-verandern-sich-die-ausleih-und-verkaufszahlen-in-den-letzten-jahren">
-     Wie verändern sich die Ausleih- und Verkaufszahlen in den letzten Jahren?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#wie-ist-das-kaufverhalten-der-aktiven-buchkaufer-innen-aufgeschlusselt">
-     Wie ist das Kaufverhalten der aktiven Buchkäufer*innen (aufgeschlüsselt)?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#wie-ist-das-kaufverhalten-von-bibliotheksnutzer-innen-ubersicht">
-     Wie ist das Kaufverhalten von Bibliotheksnutzer*innen (Übersicht)?
     </a>
    </li>
   </ul>
@@ -338,34 +313,35 @@
 <h2>Grafiken erstellen<a class="headerlink" href="#grafiken-erstellen" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import modules</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
-<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; # import modules</span>
+<span class="sd">import pandas as pd</span>
+<span class="sd">import numpy as np</span>
+<span class="sd">import plotly.graph_objects as go</span>
+<span class="sd">import plotly.express as px &quot;&quot;&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="ne">C</span>:\Users\VERENA~1\AppData\Local\Temp/ipykernel_11088/2663839986.py in &lt;module&gt;
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;plotly.graph_objects&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>_
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./data/ebooks_data.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">datetime64</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; df = pd.read_csv(&#39;./data/ebooks_data.csv&#39;, delimiter=&#39;,&#39;, header=[0])</span>
+<span class="sd">df[&#39;year&#39;] = df[&#39;year&#39;].astype(np.datetime64)</span>
 
-<span class="n">gfk_df_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./data/gfk_data.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="sd">gfk_df_data = pd.read_csv(&#39;./data/gfk_data.csv&#39;, delimiter=&#39;,&#39;, header=[0]) &quot;&quot;&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>_
 </pre></div>
 </div>
 </div>
@@ -373,320 +349,86 @@
 <div class="section" id="wie-viele-aktive-bibliotheksnutzer-innen-gibt-es-in-deutschland">
 <h3>Wie viele aktive Bibliotheksnutzer*innen gibt es in Deutschland?<a class="headerlink" href="#wie-viele-aktive-bibliotheksnutzer-innen-gibt-es-in-deutschland" title="Permalink to this headline">¶</a></h3>
 <p>Diese Grafik wurde in der Präsentation nicht verwendet.</p>
+<p><img alt="Grafik" src="_images/exploration1.svg" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; fig = go.Figure()</span>
 
-<span class="c1"># lenders</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_lenders&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;aktive Bibliotheksnutzer*innen&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">light_blue</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+text&#39;</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_lenders&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;aktive Bibliotheksnutzer*innen&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">blue</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+text&#39;</span><span class="p">))</span>
+<span class="sd"># lenders</span>
+<span class="sd">fig.add_trace(go.Scatter(x=df[&#39;year.1&#39;], y=df[&#39;perc_lenders&#39;], name=&#39;aktive Bibliotheksnutzer*innen&#39;, line=dict(color=light_blue, width=2), showlegend=False, mode=&#39;lines+text&#39;))</span>
+<span class="sd">fig.add_trace(go.Scatter(x=df[&#39;year.1&#39;][:-1], y=df[&#39;perc_lenders&#39;], name=&#39;aktive Bibliotheksnutzer*innen&#39;, line=dict(color=blue, width=2), mode=&#39;lines+text&#39;))</span>
 
-<span class="n">perc_lenders_2010</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_lenders&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2"> %&quot;</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2010</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">perc_lenders_2010</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">blue</span><span class="p">),</span> <span class="n">bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">)</span>
-<span class="n">perc_lenders_2019</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_lenders&#39;</span><span class="p">][</span><span class="mi">9</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2"> %&quot;</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2019</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">perc_lenders_2019</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">blue</span><span class="p">),</span> <span class="n">bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,)</span>
+<span class="sd">perc_lenders_2010 = f&quot;{round(df[&#39;perc_lenders&#39;][0]*100, 1)} %&quot;</span>
+<span class="sd">fig.add_annotation(x=2010, y=0.15, text=perc_lenders_2010, showarrow=False, font=dict(size=12, color=blue), bgcolor=white)</span>
+<span class="sd">perc_lenders_2019 = f&quot;{round(df[&#39;perc_lenders&#39;][9]*100, 1)} %&quot;</span>
+<span class="sd">fig.add_annotation(x=2019, y=0.15, text=perc_lenders_2019, showarrow=False, font=dict(size=12, color=blue), bgcolor=white,)</span>
 
-<span class="c1"># annotation for covid-19</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2020</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Covid-19&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_vrect</span><span class="p">(</span><span class="n">x0</span><span class="o">=</span><span class="s1">&#39;2019.5&#39;</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="s1">&#39;2020.5&#39;</span><span class="p">,</span> <span class="n">fillcolor</span><span class="o">=</span><span class="n">light_grey</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="sd"># annotation for covid-19</span>
+<span class="sd">fig.add_annotation(x=2020, y=0.9, text=&quot;Covid-19&quot;, showarrow=False, font=dict(size=12, color=dark_grey))</span>
+<span class="sd">fig.add_vrect(x0=&#39;2019.5&#39;, x1=&#39;2020.5&#39;, fillcolor=light_grey, opacity=0.2, line=dict(color=dark_grey, width=1))</span>
 
-<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Aktive Bibliotheksnutzer*innen&#39;</span><span class="p">,</span>
-                    <span class="n">title_font_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
-                    
-                    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span>
-                    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Anteil an Gesamtbevölkerung&#39;</span><span class="p">,</span>
-                    <span class="n">font_family</span><span class="o">=</span><span class="s1">&#39;Gravitas One&#39;</span><span class="p">,</span>
-                    <span class="n">font_color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span>
-                    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
-                    <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
-                    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-                   <span class="p">)</span>
+<span class="sd">fig.update_layout(title=&#39;Aktive Bibliotheksnutzer*innen&#39;,</span>
+<span class="sd">                    title_font_size=25,</span>
+<span class="sd">                    </span>
+<span class="sd">                    xaxis_title=&#39;Jahr&#39;,</span>
+<span class="sd">                    yaxis_title=&#39;Anteil an Gesamtbevölkerung&#39;,</span>
+<span class="sd">                    font_family=&#39;Gravitas One&#39;,</span>
+<span class="sd">                    font_color=dark_grey,</span>
+<span class="sd">                    plot_bgcolor=white,</span>
+<span class="sd">                    width=700,</span>
+<span class="sd">                    showlegend=False,</span>
+<span class="sd">                   )</span>
 
-<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span> <span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">tickwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">tick0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s2">&quot;.0%&quot;</span><span class="p">,</span> <span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">)</span>
+<span class="sd">fig.update_xaxes(title_text=&#39;Jahr&#39;, ticks=&#39;inside&#39;, fixedrange=True, tickcolor=grey, tickwidth=1, linecolor=grey, dtick=1)</span>
+<span class="sd">fig.update_yaxes(tick0=0, dtick=0.25, ticks=&#39;inside&#39;, tickformat=&quot;.0%&quot;, fixedrange=True, range=[0,1], tickcolor=grey, linecolor=grey)</span>
 
-<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="sd">fig.show() &quot;&quot;&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-</div>
-</div>
-</div>
-<div class="section" id="wie-grosz-ist-der-anteil-der-aktiven-leser-innen-gesamt-und-digital">
-<h3>Wie groß ist der Anteil der aktiven Leser*innen - gesamt und digital?<a class="headerlink" href="#wie-grosz-ist-der-anteil-der-aktiven-leser-innen-gesamt-und-digital" title="Permalink to this headline">¶</a></h3>
-<p>Diese Grafik wurde in der Präsentation verwendet.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-
-<span class="c1"># preparation</span>
-<span class="n">year_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="c1"># 2017 and 2020</span>
-
-<span class="c1"># two traces for readers and digital readers</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">year_list</span><span class="p">,</span>
-                            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Leser*innen gesamt&#39;</span><span class="p">,</span>
-                            <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_readers&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_readers&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]],</span>
-                            <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+markers+text&#39;</span><span class="p">,</span> 
-                            <span class="n">text</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_readers&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2"> %&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_readers&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2"> %&quot;</span><span class="p">],</span>
-                            <span class="n">textposition</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;top center&#39;</span><span class="p">,</span> <span class="s1">&#39;top center&#39;</span><span class="p">],</span>
-                            <span class="n">line_color</span><span class="o">=</span><span class="n">red</span><span class="p">))</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">year_list</span><span class="p">,</span>
-                            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Leser*innen digital&#39;</span><span class="p">,</span>
-                            <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_digital_readers&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_digital_readers&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]],</span>
-                            <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+markers+text&#39;</span><span class="p">,</span> 
-                            <span class="n">text</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_digital_readers&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2"> %&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_digital_readers&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2"> %&quot;</span><span class="p">],</span>
-                            <span class="n">textposition</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;top center&#39;</span><span class="p">,</span> <span class="s1">&#39;top center&#39;</span><span class="p">],</span>
-                            <span class="n">line_color</span><span class="o">=</span><span class="n">dark_red</span><span class="p">))</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">hovertemplate</span><span class="o">=</span><span class="s1">&#39;%</span><span class="si">{x}</span><span class="s1">&#39;</span><span class="p">)</span>
-
-<span class="c1"># guiding traces</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">year_list</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">year_list</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
-
-<span class="c1"># annotations with trace names</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">2018.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.45</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Leser*innen gesamt&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">red</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">2018.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Leser*innen digital&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_red</span><span class="p">))</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Leseverhalten der Deutschen&#39;</span><span class="p">,</span>
-                    <span class="n">title_font_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
-                    
-                    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span>
-                    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Anteil an Gesamtbevölkerung in %&#39;</span><span class="p">,</span>
-                    <span class="n">font_family</span><span class="o">=</span><span class="s1">&#39;Gravitas One&#39;</span><span class="p">,</span>
-                    <span class="n">font_color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span>
-                    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
-                    <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
-                    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-                   <span class="p">)</span>
-
-<span class="c1"># axes</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">tick0</span><span class="o">=</span><span class="mi">2017</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">tickwidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;.0%&#39;</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">visible</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>_
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-</div>
-</div>
-</div>
-<div class="section" id="wie-hoch-ist-der-anteil-an-aktiven-bibliotheksnutzer-innen-an-aktiven-leser-innen">
-<h3>Wie hoch ist der Anteil an aktiven Bibliotheksnutzer*innen an aktiven Leser*innen?<a class="headerlink" href="#wie-hoch-ist-der-anteil-an-aktiven-bibliotheksnutzer-innen-an-aktiven-leser-innen" title="Permalink to this headline">¶</a></h3>
-<p>Diese Grafik wurde in der Präsentation verwendet.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-
-<span class="c1"># preparation</span>
-<span class="n">colors1</span> <span class="o">=</span> <span class="p">[</span><span class="n">light_red</span><span class="p">,</span> <span class="p">]</span> <span class="o">*</span> <span class="mi">3</span>
-<span class="n">colors1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">grey</span><span class="p">)</span>
-
-<span class="n">colors2</span> <span class="o">=</span> <span class="p">[</span><span class="n">light_grey</span><span class="p">,</span> <span class="p">]</span> <span class="o">*</span> <span class="mi">4</span>
-
-<span class="n">perc_lenders_readers_2019</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_lenders_readers&#39;</span><span class="p">][</span><span class="mi">9</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="si">}</span><span class="s2"> %&quot;</span>
-<span class="n">perc_lenders_readers_2020</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_lenders_readers&#39;</span><span class="p">][</span><span class="mi">10</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="si">}</span><span class="s2"> %&quot;</span>
-
-<span class="c1"># two bar groups lending and non-lending readers</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][</span><span class="mi">7</span><span class="p">:</span><span class="mi">12</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_lenders_readers&#39;</span><span class="p">][</span><span class="mi">7</span><span class="p">:</span><span class="mi">12</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;aktive Bibliotheksnutzer*innen&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">marker_color</span><span class="o">=</span><span class="n">colors1</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][</span><span class="mi">7</span><span class="p">:</span><span class="mi">12</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;perc_nonlending_readers&#39;</span><span class="p">][</span><span class="mi">7</span><span class="p">:</span><span class="mi">12</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;keine Bibliotheksnutzer*innen&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">marker_color</span><span class="o">=</span><span class="n">colors2</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">hovertemplate</span><span class="o">=</span><span class="s1">&#39;%</span><span class="si">{x}</span><span class="s1">: %</span><span class="si">{y}</span><span class="s1">&#39;</span><span class="p">)</span>
-
-<span class="c1"># annotation for covid-19</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2020</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Covid-19&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2020</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">perc_lenders_readers_2020</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">),</span> <span class="n">bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
-                    <span class="n">opacity</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">bordercolor</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span> <span class="n">borderpad</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-
-<span class="c1"># annotation for 2019, representative data</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2019</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">perc_lenders_readers_2019</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">red</span><span class="p">),</span> <span class="n">bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
-                    <span class="n">opacity</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">bordercolor</span><span class="o">=</span><span class="n">red</span><span class="p">,</span> <span class="n">borderpad</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-
-<span class="c1"># layout</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Aktive Bibliotheksnutzer*innen&#39;</span><span class="p">,</span>
-                    <span class="n">title_font_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
-                    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span>
-                    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Anteil an aktiven Leser*innen&#39;</span><span class="p">,</span>
-                    <span class="n">font_family</span><span class="o">=</span><span class="s1">&#39;Gravitas One&#39;</span><span class="p">,</span>
-                    <span class="n">font_color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span>
-                    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
-                    <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
-                    <span class="n">barmode</span><span class="o">=</span><span class="s1">&#39;stack&#39;</span><span class="p">,</span>
-                   <span class="p">)</span>
-
-<span class="c1"># axes</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">tick0</span><span class="o">=</span><span class="mi">2017</span><span class="p">,</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;.0%&#39;</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-                   
-<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-</div>
-</div>
-</div>
-<div class="section" id="wie-viele-bucher-werden-ausgeliehen-gekauft-aufgeschlusselt">
-<h3>Wie viele Bücher werden ausgeliehen/gekauft (aufgeschlüsselt)?<a class="headerlink" href="#wie-viele-bucher-werden-ausgeliehen-gekauft-aufgeschlusselt" title="Permalink to this headline">¶</a></h3>
-<p>Diese Grafik wurde in der Präsentation (Dashboard) verwendet.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-
-<span class="c1"># analog</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;book_sales&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Verkäufe analog&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">light_red</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+text&#39;</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;print_lendings&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Entleihungen analog&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">dark_red</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+text&#39;</span><span class="p">))</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">2010.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">330000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;analog&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">),</span> <span class="n">bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">bordercolor</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span> <span class="n">borderpad</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2017</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">350000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Verkäufe&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">light_red</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2017</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">230000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Entleihungen&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_red</span><span class="p">))</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">add_hrect</span><span class="p">(</span><span class="n">y0</span><span class="o">=</span><span class="mi">200000000</span><span class="p">,</span> <span class="n">y1</span><span class="o">=</span><span class="mi">420000000</span><span class="p">,</span> <span class="n">fillcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-
-<span class="c1">#digital</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;ebook_sales&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Verkäufe digital&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">light_red</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+text&#39;</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;digital_lendings&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Entleihungen digital&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">dark_red</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+text&#39;</span><span class="p">))</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">2010.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">50000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;digital&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">),</span> <span class="n">bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">bordercolor</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span> <span class="n">borderpad</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2017</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">50000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Verkäufe&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">light_red</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2017</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">8000000</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Entleihungen&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">dark_red</span><span class="p">))</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">add_hrect</span><span class="p">(</span><span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y1</span><span class="o">=</span><span class="mi">100000000</span><span class="p">,</span> <span class="n">fillcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-
-<span class="c1"># layout</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Verkaufs- und Entleihzahlen&#39;</span><span class="p">,</span>
-                    <span class="n">title_font_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
-                    
-                    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span>
-                    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Anzahl Bücher&#39;</span><span class="p">,</span>
-                    <span class="n">font_family</span><span class="o">=</span><span class="s1">&#39;Gravitas One&#39;</span><span class="p">,</span>
-                    <span class="n">font_color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span>
-                    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
-                    <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
-                    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-                   <span class="p">)</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span> <span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">tickwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">tick0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">420000000</span><span class="p">])</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
 </div>
 </div>
 </div>
 <div class="section" id="wie-viele-bucher-werden-pro-gekauftes-buch-entliehen-analog-und-digital">
 <h3>Wie viele Bücher werden pro gekauftes Buch entliehen - analog und digital?<a class="headerlink" href="#wie-viele-bucher-werden-pro-gekauftes-buch-entliehen-analog-und-digital" title="Permalink to this headline">¶</a></h3>
 <p>Diese Grafik wurde in der Präsentation nicht verwendet.</p>
+<p><img alt="Grafik" src="_images/exploration2.svg" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; fig = go.Figure()</span>
 
-<span class="n">category</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;analog&#39;</span><span class="p">,</span> <span class="s1">&#39;digital&#39;</span><span class="p">]</span>
-<span class="n">mean_lendings</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lendings_per_sale&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ebook_lendings_per_sale&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)]</span>
+<span class="sd">category = [&#39;analog&#39;, &#39;digital&#39;]</span>
+<span class="sd">mean_lendings = [df[&#39;lendings_per_sale&#39;].mean(axis=0), df[&#39;ebook_lendings_per_sale&#39;].mean(axis=0)]</span>
 
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">category</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">mean_lendings</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Verkäufe&#39;</span><span class="p">,</span> <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">marker_color</span><span class="o">=</span><span class="n">blue</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.4</span><span class="p">))</span>
+<span class="sd">fig.add_trace(go.Bar(x=category, y=mean_lendings, name=&#39;Verkäufe&#39;, showlegend=False, marker_color=blue, width=0.4))</span>
 
-<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Entliehene Bücher pro gekauftes Buch&#39;</span><span class="p">,</span>
-                    <span class="n">title_font_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
-                    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Anzahl Bücher&#39;</span><span class="p">,</span>
-                    <span class="n">font_family</span><span class="o">=</span><span class="s1">&#39;Gravitas One&#39;</span><span class="p">,</span>
-                    <span class="n">font_color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span>
-                    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
-                    <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
-                    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-                   <span class="p">)</span>
+<span class="sd">fig.update_layout(title=&#39;Entliehene Bücher pro gekauftes Buch&#39;,</span>
+<span class="sd">                    title_font_size=25,</span>
+<span class="sd">                    yaxis_title=&#39;Anzahl Bücher&#39;,</span>
+<span class="sd">                    font_family=&#39;Gravitas One&#39;,</span>
+<span class="sd">                    font_color=dark_grey,</span>
+<span class="sd">                    plot_bgcolor=white,</span>
+<span class="sd">                    width=500,</span>
+<span class="sd">                    showlegend=False,</span>
+<span class="sd">                   )</span>
 
-<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">tick0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">)</span>
+<span class="sd">fig.update_xaxes(fixedrange=True, linecolor=grey, dtick=1)</span>
+<span class="sd">fig.update_yaxes(tick0=0, ticks=&#39;inside&#39;, range=[0,1], fixedrange=True, tickcolor=grey, linecolor=grey) &quot;&quot;&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-</div>
-</div>
-</div>
-<div class="section" id="wie-verandern-sich-die-ausleih-und-verkaufszahlen-in-den-letzten-jahren">
-<h3>Wie verändern sich die Ausleih- und Verkaufszahlen in den letzten Jahren?<a class="headerlink" href="#wie-verandern-sich-die-ausleih-und-verkaufszahlen-in-den-letzten-jahren" title="Permalink to this headline">¶</a></h3>
-<p>Diese Grafik wurde in der Präsentation (Dashboard) verwendet.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-
-<span class="c1"># lendings and sales</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lendings_change&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Entleihungen&#39;</span><span class="p">,</span> <span class="n">marker_color</span><span class="o">=</span><span class="n">blue</span><span class="p">))</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year.1&#39;</span><span class="p">][:</span><span class="mi">8</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales_change&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Verkäufe&#39;</span><span class="p">,</span> <span class="n">marker_color</span><span class="o">=</span><span class="n">green</span><span class="p">))</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Entleih- und Verkaufszahlen&#39;</span><span class="p">,</span>
-                    <span class="n">title_font_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
-                    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span>
-                    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Anzahl der Bücher&#39;</span><span class="p">,</span>
-                    <span class="n">font_family</span><span class="o">=</span><span class="s1">&#39;Gravitas One&#39;</span><span class="p">,</span>
-                    <span class="n">font_color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span>
-                    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
-                    <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
-                   <span class="p">)</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mf">2010.5</span><span class="p">,</span> <span class="mf">2017.5</span><span class="p">],</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span> <span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">tickwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">tick0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">11000000</span><span class="p">,</span><span class="mi">7500000</span><span class="p">],</span> <span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">)</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>_
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-</div>
-</div>
-</div>
-<div class="section" id="wie-ist-das-kaufverhalten-der-aktiven-buchkaufer-innen-aufgeschlusselt">
-<h3>Wie ist das Kaufverhalten der aktiven Buchkäufer*innen (aufgeschlüsselt)?<a class="headerlink" href="#wie-ist-das-kaufverhalten-der-aktiven-buchkaufer-innen-aufgeschlusselt" title="Permalink to this headline">¶</a></h3>
-<p>Diese Grafik wurde in der Präsentation (Dashboard) verwendet.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">gfk_df_data</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;buyer&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;purchases_per_buyer&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;medium&#39;</span><span class="p">,</span> <span class="n">barmode</span><span class="o">=</span><span class="s1">&#39;group&#39;</span><span class="p">,</span>
-                    <span class="n">color_discrete_map</span><span class="o">=</span><span class="p">{</span>
-                        <span class="s1">&#39;analog&#39;</span><span class="p">:</span> <span class="n">light_red</span><span class="p">,</span>
-                        <span class="s1">&#39;digital&#39;</span><span class="p">:</span> <span class="n">dark_red</span><span class="p">,</span>
-                    <span class="p">})</span>
-                    
-<span class="n">fig1</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Gesamt&#39;</span><span class="p">,</span> <span class="s2">&quot;Entleiher*innen digital&quot;</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">red</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
-
-<span class="n">fig1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Kaufverhalten&#39;</span><span class="p">,</span>
-                    <span class="n">title_font_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
-                    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Art der Käufer*innen&#39;</span><span class="p">,</span>
-                    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Durchschnittl. Anzahl an Büchern&#39;</span><span class="p">,</span>
-                    <span class="n">font_family</span><span class="o">=</span><span class="s1">&#39;Gravitas One&#39;</span><span class="p">,</span>
-                    <span class="n">font_color</span><span class="o">=</span><span class="n">dark_grey</span><span class="p">,</span>
-                    <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
-                    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">white</span><span class="p">,</span>
-                    <span class="n">legend_title_text</span><span class="o">=</span><span class="s1">&#39;Art des Buchs&#39;</span>
-                <span class="p">)</span>
-
-<span class="n">fig1</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">fixedrange</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">fig1</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">tick0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">tickcolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="n">grey</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;.2&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-</div>
-</div>
-</div>
-<div class="section" id="wie-ist-das-kaufverhalten-von-bibliotheksnutzer-innen-ubersicht">
-<h3>Wie ist das Kaufverhalten von Bibliotheksnutzer*innen (Übersicht)?<a class="headerlink" href="#wie-ist-das-kaufverhalten-von-bibliotheksnutzer-innen-ubersicht" title="Permalink to this headline">¶</a></h3>
-<p>Diese Grafik wurde in der Präsentation (Dashboard) verwendet.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_df</span> <span class="o">=</span> <span class="n">gfk_df_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;buyer&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="n">fig1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">gfk_df_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;buyer&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;purchases_per_buyer&quot;</span><span class="p">)</span>
-<span class="n">fig1</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
 </div>
 </div>
 </div>

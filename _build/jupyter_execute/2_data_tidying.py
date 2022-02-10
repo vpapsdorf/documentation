@@ -29,6 +29,7 @@ library_df = pd.read_csv('./data/dbs_data.csv', delimiter=';', header=[2,3], enc
 # just relevant data
 sum_row = library_df.loc[(library_df[('NR','Unnamed: 0_level_1')] == 'Summe')]
 library_df = sum_row.astype('string')
+library_df
 
 
 # Das Dataframe soll so aufgebaut sein, dass jede Zeile ein Jahr darstellt. In den Spalten finden sich die Ausprägungen wie zum Beispiel die Anzahl der Bibliotheksnutzer*innen.
@@ -107,9 +108,9 @@ df = pd.DataFrame(
         'book_sales': ([416000000, 401000000, 399000000, 398000000, 387000000, 380000000, 377000000, 367000000, np.nan, np.nan, np.nan]),
 
         # library information
-        'lenders': library_df['Entleiher'].values,
-        'lendings': library_df['Entleih. insges.'].values,
-        'digital_lendings': library_df['Entl. virt.Best.'].values,
+        'lenders': library_df['Entleiher'].values.astype(int),
+        'lendings': library_df['Entleih. insges.'].values.astype(int),
+        'digital_lendings': library_df['Entl. virt.Best.'].values.astype(int),
         'ebook_lendings': ([np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 25652538, 30211532]),
         'print_lendings': library_df['Entl. Print'].values,
         
@@ -201,19 +202,19 @@ buying_habits_df['medium'] = pd.Categorical(buying_habits_df['medium'])
 
 
 df.to_csv('./data/ebooks_data.csv')
-#df.to_csv('./app/data/ebooks_data.csv')
+df.to_csv('./app/data/ebooks_data.csv')
 
 
-# In[13]:
+# In[ ]:
 
 
 gfk_df.to_csv('./data/gfk_data.csv')
-#gfk_df.to_csv('./app/data/gfk_data.csv')
+gfk_df.to_csv('./app/data/gfk_data.csv')
 
 
-# In[14]:
+# In[ ]:
 
 
 buying_habits_df.to_csv('./data/purchase_data.csv')
-#buying_habits_df.to_csv('./app/data/purchase_data.csv')
+buying_habits_df.to_csv('./app/data/purchase_data.csv')
 

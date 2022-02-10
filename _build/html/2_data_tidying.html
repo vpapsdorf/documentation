@@ -100,7 +100,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="x_storyboard.html">
+  <a class="reference internal" href="0_storyboard.html">
    Big idea worksheet und Storyboard
   </a>
  </li>
@@ -141,6 +141,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="5_dashboard.html">
    Dashboard (Präsentation)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6_excel.html">
+   Excel
   </a>
  </li>
 </ul>
@@ -315,9 +320,92 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># just relevant data</span>
 <span class="n">sum_row</span> <span class="o">=</span> <span class="n">library_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">library_df</span><span class="p">[(</span><span class="s1">&#39;NR&#39;</span><span class="p">,</span><span class="s1">&#39;Unnamed: 0_level_1&#39;</span><span class="p">)]</span> <span class="o">==</span> <span class="s1">&#39;Summe&#39;</span><span class="p">)]</span>
 <span class="n">library_df</span> <span class="o">=</span> <span class="n">sum_row</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">)</span>
+<span class="n">library_df</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>NR</th>
+      <th>Name</th>
+      <th>Bibliothek</th>
+      <th>DBS-ID</th>
+      <th colspan="6" halign="left">Entleiher</th>
+      <th>...</th>
+      <th colspan="9" halign="left">Ausg. Erwerbung</th>
+      <th>Unnamed: 92_level_0</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Unnamed: 0_level_1</th>
+      <th>Unnamed: 1_level_1</th>
+      <th>Unnamed: 2_level_1</th>
+      <th>Unnamed: 3_level_1</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>...</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+      <th>Unnamed: 92_level_1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>7393</th>
+      <td>Summe</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>7.656.290</td>
+      <td>7.569.035</td>
+      <td>7.470.671</td>
+      <td>7.374.911</td>
+      <td>7.266.128</td>
+      <td>7.184.461</td>
+      <td>...</td>
+      <td>99.774.184</td>
+      <td>103.423.305</td>
+      <td>103.645.088</td>
+      <td>104.384.607</td>
+      <td>108.453.615</td>
+      <td>109.684.251</td>
+      <td>111.128.657</td>
+      <td>114.050.410,26</td>
+      <td>111.786.730,4</td>
+      <td>&lt;NA&gt;</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 93 columns</p>
+</div></div></div>
 </div>
 <p>Das Dataframe soll so aufgebaut sein, dass jede Zeile ein Jahr darstellt. In den Spalten finden sich die Ausprägungen wie zum Beispiel die Anzahl der Bibliotheksnutzer*innen.</p>
 <div class="cell docutils container">
@@ -397,9 +485,9 @@
         <span class="s1">&#39;book_sales&#39;</span><span class="p">:</span> <span class="p">([</span><span class="mi">416000000</span><span class="p">,</span> <span class="mi">401000000</span><span class="p">,</span> <span class="mi">399000000</span><span class="p">,</span> <span class="mi">398000000</span><span class="p">,</span> <span class="mi">387000000</span><span class="p">,</span> <span class="mi">380000000</span><span class="p">,</span> <span class="mi">377000000</span><span class="p">,</span> <span class="mi">367000000</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">]),</span>
 
         <span class="c1"># library information</span>
-        <span class="s1">&#39;lenders&#39;</span><span class="p">:</span> <span class="n">library_df</span><span class="p">[</span><span class="s1">&#39;Entleiher&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
-        <span class="s1">&#39;lendings&#39;</span><span class="p">:</span> <span class="n">library_df</span><span class="p">[</span><span class="s1">&#39;Entleih. insges.&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
-        <span class="s1">&#39;digital_lendings&#39;</span><span class="p">:</span> <span class="n">library_df</span><span class="p">[</span><span class="s1">&#39;Entl. virt.Best.&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+        <span class="s1">&#39;lenders&#39;</span><span class="p">:</span> <span class="n">library_df</span><span class="p">[</span><span class="s1">&#39;Entleiher&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">),</span>
+        <span class="s1">&#39;lendings&#39;</span><span class="p">:</span> <span class="n">library_df</span><span class="p">[</span><span class="s1">&#39;Entleih. insges.&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">),</span>
+        <span class="s1">&#39;digital_lendings&#39;</span><span class="p">:</span> <span class="n">library_df</span><span class="p">[</span><span class="s1">&#39;Entl. virt.Best.&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">),</span>
         <span class="s1">&#39;ebook_lendings&#39;</span><span class="p">:</span> <span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">25652538</span><span class="p">,</span> <span class="mi">30211532</span><span class="p">]),</span>
         <span class="s1">&#39;print_lendings&#39;</span><span class="p">:</span> <span class="n">library_df</span><span class="p">[</span><span class="s1">&#39;Entl. Print&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
         
@@ -496,7 +584,46 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./data/ebooks_data.csv&#39;</span><span class="p">)</span>
-<span class="c1">#df.to_csv(&#39;./app/data/ebooks_data.csv&#39;)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./app/data/ebooks_data.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_12796</span>\<span class="mf">1254726040.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./data/ebooks_data.csv&#39;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./app/data/ebooks_data.csv&#39;</span><span class="p">)</span>
+
+<span class="nn">C:\anaconda\envs\jbook\lib\site-packages\pandas\core\generic.py</span> in <span class="ni">to_csv</span><span class="nt">(self, path_or_buf, sep, na_rep, float_format, columns, header, index, index_label, mode, encoding, compression, quoting, quotechar, line_terminator, chunksize, date_format, doublequote, escapechar, decimal, errors, storage_options)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3480</span>             <span class="n">doublequote</span><span class="o">=</span><span class="n">doublequote</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">3481</span>             <span class="n">escapechar</span><span class="o">=</span><span class="n">escapechar</span><span class="p">,</span>
+<span class="ne">-&gt; </span><span class="mi">3482</span>             <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">3483</span>         <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3484</span> 
+
+<span class="nn">C:\anaconda\envs\jbook\lib\site-packages\pandas\io\formats\format.py</span> in <span class="ni">to_csv</span><span class="nt">(self, path_or_buf, encoding, sep, columns, index_label, mode, compression, quoting, quotechar, line_terminator, chunksize, date_format, doublequote, escapechar, errors, storage_options)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1103</span>             <span class="n">formatter</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">fmt</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1104</span>         <span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1105</span>         <span class="n">csv_formatter</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1106</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1107</span>         <span class="k">if</span> <span class="n">created_buffer</span><span class="p">:</span>
+
+<span class="nn">C:\anaconda\envs\jbook\lib\site-packages\pandas\io\formats\csvs.py</span> in <span class="ni">save</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">241</span>             <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">242</span>             <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">compression</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">243</span>             <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">storage_options</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">244</span>         <span class="p">)</span> <span class="k">as</span> <span class="n">handles</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">245</span> 
+
+<span class="nn">C:\anaconda\envs\jbook\lib\site-packages\pandas\io\common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">705</span>                 <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">706</span>                 <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">707</span>                 <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">708</span>             <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">709</span>         <span class="k">else</span><span class="p">:</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;./app/data/ebooks_data.csv&#39;
 </pre></div>
 </div>
 </div>
@@ -504,7 +631,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gfk_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./data/gfk_data.csv&#39;</span><span class="p">)</span>
-<span class="c1">#gfk_df.to_csv(&#39;./app/data/gfk_data.csv&#39;)</span>
+<span class="n">gfk_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./app/data/gfk_data.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -512,7 +639,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">buying_habits_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./data/purchase_data.csv&#39;</span><span class="p">)</span>
-<span class="c1">#buying_habits_df.to_csv(&#39;./app/data/purchase_data.csv&#39;)</span>
+<span class="n">buying_habits_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./app/data/purchase_data.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

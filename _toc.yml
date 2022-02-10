@@ -14,7 +14,7 @@ parts:
   - file: 2_data_tidying
   - file: 3_data_exploration
   - file: 4_data_visualization
+  - file: 6_excel
 - caption: Dashboard
   chapters:
   - file: 5_dashboard
-  - file: 6_excel
